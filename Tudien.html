@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="search" id="value"/>
+<input type="button" value="Tìm kiếm" onclick="timkiem();"/>
+<script>
+    let TV = ['Toán', 'Văn', 'Hóa', 'Nam', 'Bắc', 'Đông'];
+    let TA = ['Maths', 'Listerature', 'Chemical', 'Male', 'North', 'Bronze'];
+
+    function timkiem() {
+        let value = document.getElementById("value").value;
+        for (let i = 0; i < TA.length; i++) {
+            for (let j = 0; j <= i; j++) {
+                if (value == TA[i]) {
+                    TA[i] = TV[j];
+                    alert(TV[j]);
+                } else {
+                    alert("Không tìm thấy");
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
