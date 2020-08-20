@@ -14,15 +14,14 @@
     function timkiem() {
         let value = document.getElementById("value").value;
         for (let i = 0; i < TA.length; i++) {
-            for (let j = 0; j <= i; j++) {
-                if (value == TA[i]) {
-                    TA[i] = TV[j];
-                    alert(TV[j]);
-                } else {
-                    alert("Không tìm thấy");
-                }
+            if (value === TA[i]) {
+                alert(TV[i]);
+                break;
+            } else {
+                alert("không tìm thấy");
             }
         }
+
     }
 </script>
 </body>
