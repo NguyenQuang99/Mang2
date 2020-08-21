@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let size = +prompt("Nhập số lượng phần tử trong mảng");
+    for (let i =0; i< size; i++) {
+        let a = +prompt("Nhập phần tử vào mảng:");
+        array.push(a);
+    }
+    document.write("Mảng vừa nhập vào là:" + array);
+    let V = 5;
+    let check = false;
+    for ( let j = 0;j < array.length;j++) {
+        if (V == array[j]) {
+            check = true;
+        } else {
+            check = false;
+        }
+    }
+    if (check == true) {
+        array[j + 1] = array [j];
+        array[array.length -1] = 0;
+    }
+    document.write("Mảng sau kho xóa là :" + array);
+
+</script>
+</body>
+</html>

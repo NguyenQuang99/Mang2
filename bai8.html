@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for ( let i =0; i< 10; i++) {
+        let a = +prompt("Nhập vào array:");
+        array.push(a);
+    }
+    document.write("Mảng vừa nhập là:" + array);
+    let temp;
+    for (let i =0; i <array.length; i++) {
+        for (let j =i+1;j <=array.length;j++) {
+            if (array[i] <array[j]) {
+                array[i] = temp;
+                array[i]=array[j];
+                array[j]=temp;
+            }
+        }
+    }
+    document.write("Mảng sau khi sắp xếp giảm dần:" +array);
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [1, 5, 10, 20, 15, 6];
+
+    let max = numbers[0];
+    let index =0;
+    let sum = 0;
+    for (let i = 1; i< numbers.length; i++) {
+        if (max < numbers[i]) {
+            max = numbers[i];
+            index = i;
+        }
+        sum = sum + numbers[i];
+
+    }
+    TB = sum /6;
+    document.write("Vị trí thứ" + index + "có giá trị là max:" + max + "Giá trị trung bình" + TB );
+</script>
+</body>
+</html>
